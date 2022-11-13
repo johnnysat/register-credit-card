@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Cadastro de Cartão</title>
+</head>
+<body>
+  <header>
+    <section class="bg_cards">
+      <div class="back_card">
+        <input type="number">
+      </div>
+      <div class="front_card">
+        <p class="front_card_number">1234 5678 9123 0000</p>
+        <p class="front_card_name">João Alves</p>
+        <p class="front_card_date">MM/AA</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <ul class="base_card">
+      <li>Nome no Cartão</li>
+      <input type="text" class="card_number" placeholder="ex: João Alves">
+      <li>Número do Cartão</li>
+      <input type="text" class="card_name" placeholder="ex: 1234 5678 9123 0000 ">
+      <li>Validade (MM/AA) <span class="cvc_card">CVC</span></li>
+      <div class="card_date">
+        <input type="number" class="" placeholder="MM">
+        <input type="number" class="" placeholder="AA">
+        <input type="number" class="cvc_number" placeholder="ex: 123">
+      </div>
+    </ul>
+
+    <button type="button" class="button_confirm">Confirmar</button>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
