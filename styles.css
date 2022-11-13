@@ -22,7 +22,7 @@ body {
 .back_card {
   height: 160px;
   width: 250px;
-  background-color: hsl(270, 3%, 87%);
+  background-image: url(./images/bg-card-back.png);
   border-radius: 5px;
   margin-left: 110px;
   margin-top: 30px;
@@ -32,7 +32,7 @@ body {
 .front_card {
   height: 160px;
   width: 250px;
-  background-image: linear-gradient(180deg, red, yellow);
+  background-image: url(./images/bg-card-front.png);
   border-radius: 5px;
   margin-left: 30px;
   margin-top: 140px;
@@ -47,21 +47,21 @@ body {
   color: #fff;
   position: absolute;
   margin-top: 80px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .front_card .front_card_name {
   color: #fff;
   font-size: 14px;
   margin-top: 120px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .front_card .front_card_date {
   color: #fff;
   font-size: 14px;
   margin-top: 120px;
-  margin-left: 80px;
+  margin-left: 65px;
 }
 
 .base_card {
