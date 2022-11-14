@@ -7,16 +7,26 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
+body {
+  width: 100%;
+}
+
 header {
   height: 35vh;
   width:  100%;
-  background-color: hsl(278, 68%, 11%);
+  background-image: url(./images/bg-main-mobile.png);
   display: flex;
   position: relative;
 }
 
 body {
   font-size: 18px;
+}
+
+.back_card_cvc {
+  margin-left: 210px;
+  margin-top: 110px;
+  color: #fff;
 }
 
 .back_card {
