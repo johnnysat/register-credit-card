@@ -91,8 +91,8 @@ body {
   margin-bottom: 15px;
   padding: 10px;
   display: flex;
-  width: 90%;
-  border: 1px solid #EAECEE;
+  width: 93%;
+  border: 1px solid black/*#EAECEE;*/
 }
 
 .card_date {
@@ -103,7 +103,6 @@ body {
 .card_date input {
   width: 29%;
 }
-
 
 .cvc_card {
   margin-left: 63px;
@@ -147,7 +146,7 @@ body {
 
   .back_card {
     margin-top: 250px;
-    margin-left: 250px;
+    margin-left: 240px;
   }
 
   main {
@@ -163,11 +162,12 @@ body {
   }
 
   .cvc_card {
-    margin-left: 135px;
+    margin-left: 187px;
+
   }
 
   .cvc_number {
-    margin-left: 70px;
+    margin-left: 125px;
   }
 
   .button_confirm {
