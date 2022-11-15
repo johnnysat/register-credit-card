@@ -5,37 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
   <title>Cadastro de Cartão</title>
 </head>
 <body>
   <header>
     <section class="bg_cards">
       <div class="back_card">
-        <p class="back_card_cvc">123</p>
+        <p class="back_card_cvc" id="cvcNumber">000</p>
       </div>
       <div class="front_card">
-        <p class="front_card_number">1234 5678 9123 0000</p>
-        <p class="front_card_name">João Alves</p>
-        <p class="front_card_date">MM/AA</p>
+        <p class="front_card_number" id="cardNumber">0000 0000 0000 0000</p>
+        <p class="front_card_name" id="cardName">Example Name</p>
+        <p class="front_card_date"><span id="mmCARD">MM</span> / <span id="aaCARD">AA</span></p>
       </div>
     </section>
   </header>
 
   <main>
-    <ul class="base_card">
-      <li>Nome no Cartão</li>
-      <input type="text" class="card_number" placeholder="ex: João Alves">
-      <li>Número do Cartão</li>
-      <input type="text" class="card_name" placeholder="ex: 1234 5678 9123 0000 ">
-      <li>Validade (MM/AA) <span class="cvc_card">CVC</span></li>
-      <div class="card_date">
-        <input type="number" class="date" placeholder="MM">
-        <input type="number" class="date" placeholder="AA">
-        <input type="number" class="cvc_number" placeholder="ex: 123">
-      </div>
-    </ul>
-
-    <button type="button" class="button_confirm">Confirmar</button>
+    <form action="" id="formulario">
+      <ul class="base_card">
+          <li>Nome no Cartão</li>
+          <input type="text" id="inputName" class="card_number" placeholder="ex: João Alves">
+          <li>Número do Cartão</li>
+          <input type="text" id="inputNumberCard" class="card_name" placeholder="ex: 1234 5678 9123 0000 ">
+          <li>Validade (MM/AA) <span class="cvc_card">CVC</span></li>
+          <div class="card_date">
+            <input type="number" id="inputMM" class="date" placeholder="MM">
+            <input type="number" id="inputAA" class="date" placeholder="AA">
+            <input type="number" id="inputCVC" class="cvc_number" placeholder="ex: 123">
+          </div>
+      </ul>
+      <input type="submit" id="btnSubmite" class="button_confirm" value="Confirmar"></input>
+    </form>
   </main>
 
   <footer>
