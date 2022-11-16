@@ -95,6 +95,12 @@ body {
   border: 1px solid black/*#EAECEE;*/
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .card_date {
   display: flex;
   gap: 10px;
