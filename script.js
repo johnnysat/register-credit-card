@@ -14,11 +14,24 @@ const aaCard = document.getElementById('aaCard');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
+   
+  cardName.innerHTML = inputName.value;
+
+  if(inputNumberCard.value.length == 16 ){
+    cardNumber.innerHTML = inputNumberCard.value;
+  }
+
+  if(inputCVC.value.length == 3){
+    cvcNumber.innerHTML = inputCVC.value;
+  }
   
-  cardName.innerText = inputName.value;
-  cardNumber.innerText = inputNumberCard.value;
-  cvcNumber.innerText = inputCVC.value;
-  mmCard.innerText = inputMM.value;
-  aaCard.innerText = inputAA.value;
+  if(inputMM.value.length == 2){
+    mmCard.innerHTML = inputMM.value;
+  } 
+
+  if(inputAA.value.length == 2){
+    aaCard.innerHTML = inputAA.value;
+  } 
+
 });
 
