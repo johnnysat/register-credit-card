@@ -12,12 +12,16 @@ body {
 }
 
 header {
+  padding-bottom: 40px;
+  display: flex;
+  position: relative;
+}
+
+header .bg_cards {
   height: 35vh;
   width: 100%;
   background-image: url(./images/bg-main-mobile.png);
   background-size: 100%;
-  display: flex;
-  position: relative;
 }
 
 body {
