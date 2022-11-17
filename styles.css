@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  padding-bottom: 40px;
+  padding-bottom: 5%;
   display: flex;
   position: relative;
 }
@@ -67,22 +67,23 @@ body {
   color: #fff;
   position: absolute;
   margin-top: 80px;
-  margin-left: 30px;
+  margin-left: 20px;
+  letter-spacing: 2px;
 }
 
 .front_card .front_card_name {
   color: #fff;
-  font-size: 14px;
-  margin-top: 115px;
-  margin-left: 30px;
-  width: 40%;
+  font-size: 12px;
+  margin-top: 130px;
+  margin-left: 25px;
+  width: 50%;
 }
 
 .front_card .front_card_date {
   color: #fff;
-  font-size: 14px;
-  margin-top: 115px;
-  margin-left: 65px;
+  font-size: 12px;
+  margin-top: 130px;
+  margin-left: 40px;
 }
 
 .base_card {
@@ -145,19 +146,23 @@ input::-webkit-inner-spin-button {
   }
 
   header {
-    background-image: url(./images/bg-main-desktop.png);
     width: 30%;
+    height: 100vh;
+  }
+
+  header .bg_cards {
+    background-image: url(./images/bg-main-desktop.png);
     height: 100vh;
   }
 
   .front_card {
     margin-top: 80px;
-    margin-left: 180px;
+    margin-left: 50%;
   }
 
   .back_card {
-    margin-top: 250px;
-    margin-left: 240px;
+    margin-top: 200px;
+    margin-left: 65%;
   }
 
   main {
