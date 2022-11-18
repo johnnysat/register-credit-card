@@ -44,7 +44,12 @@
             id="inputAA"
             required
             />
-            <input type="number" id="inputCVC" class="cvc_number" placeholder="ex: 123" required>
+            <input type="number" id="inputCVC" class="cvc_number" placeholder="ex: 123" 
+            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            minlength="3"
+            maxlength="3"
+            id="inputAA"
+            required>
           </div>
       </ul>
       <input type="submit" id="btnSubmite" class="button_confirm" value="Confirmar"></input>
