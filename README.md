@@ -3,6 +3,8 @@ Projeto desenvolvido para facilitar o cadastro do cartão de crédito, mostrando
 real. 
 
 ## Mobile First
-Este projeto está sendo desenvolvimento em Mobile First. Caso você esteja visualizando em um desktop e a 
-visualização não esteja otimizada ainda, é porque não adicionei a portabilidade para o desktop ainda. <br>
-Será o próximo passo após finalizar a estilização em Mobile, antes de adicionar as funcionalidades do Javascript.
+Projeto desenvolvido em Mobile First, mas com disponibilidade de visualização também à partir de 1035px para desktop. 
+
+## Tecnologias Utilizadas
+HTML5, CSS3 e Javascript. <br>
+O projeto está, atualmente, hospedado na Vercel e pode ser visualizado através do link <a href="register-credit-card.vercel.app">Vercel</a>.
