@@ -98,7 +98,7 @@ body {
   padding: 10px;
   display: flex;
   width: 93%;
-  border: 1px solid black/*#EAECEE;*/
+  border: 1px solid #EAECEE;
 }
 
 input::-webkit-outer-spin-button,

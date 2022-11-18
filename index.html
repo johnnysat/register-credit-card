@@ -27,7 +27,12 @@
           <li>Nome no Cartão</li>
           <input type="text" id="inputName" class="card_number" placeholder="ex: João Alves" required>
           <li>Número do Cartão</li>
-          <input type="number" id="inputNumberCard" class="card_name" placeholder="ex: 1234 5678 9123 0000 " required>
+          <input type="number" id="inputNumberCard" class="card_name" placeholder="ex: 1234 5678 9123 0000 " 
+          oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          minlength="16"
+          maxlength="16"
+          required
+          />
           <li>Validade (MM/AA) <span class="cvc_card">CVC</span></li>
           <div class="card_date">
             <input type="number" class="date" placeholder="MM"
@@ -59,7 +64,6 @@
   <footer>
 
   </footer>
-  <script src="script.js"></script>
-
+  <script src="https://unpkg.com/imask"></script>
 </body>
 </html>
