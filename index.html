@@ -14,7 +14,7 @@
         <p class="back_card_cvc" id="cvcNumber">000</p>
       </div>
       <div class="front_card">
-        <p class="front_card_number" id="cardNumber">0000 0000 0000 0000</p>
+        <p class="front_card_number" id="cardNumber">0000 0000 0000 0000</p>        
         <p class="front_card_name" id="cardName">José Alves</p>
         <p class="front_card_date"><span id="mmCard">MM</span> / <span id="aaCard">AA</span></p>
       </div>
@@ -25,32 +25,38 @@
     <form action="" id="formulario">
       <ul class="base_card">
           <li>Nome no Cartão</li>
-          <input type="text" id="inputName" class="card_number" placeholder="ex: João Alves" required>
+          <input type="text" id="inputName" class="card_number" placeholder="ex: João Alves" 
+          oninput="inputNameImpress(this.value)"
+          required>
+
           <li>Número do Cartão</li>
           <input type="number" id="inputNumberCard" class="card_name" placeholder="ex: 1234 5678 9123 0000 " 
-          oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+          inputNumberImpress(this.value)"
           minlength="16"
           maxlength="16"
           required
           />
+
           <li>Validade (MM/AA) <span class="cvc_card">CVC</span></li>
           <div class="card_date">
             <input type="number" class="date" placeholder="MM"
-            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);inputMMImpress(this.value)"
             minlength="2"
             maxlength="2"
             id="inputMM"
             required
             />
             <input type="number" class="date" placeholder="AA" 
-            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);inputAAImpress(this.value)"
             minlength="2"
             maxlength="2"
             id="inputAA"
             required
             />
             <input type="number" id="inputCVC" class="cvc_number" placeholder="ex: 123" 
-            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)
+            inputCVCImpress(this.value);"
             minlength="3"
             maxlength="3"
             id="inputAA"
@@ -64,6 +70,6 @@
   <footer>
 
   </footer>
-  <script src="https://unpkg.com/imask"></script>
+  <script src="/script.js"></script>
 </body>
 </html>

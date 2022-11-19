@@ -35,3 +35,22 @@ form.addEventListener('submit', function(e) {
 
 });
 
+function inputNameImpress(val) {
+  document.getElementById("cardName").innerHTML = val; 
+}
+
+function inputNumberImpress(val) {
+  document.getElementById("cardNumber").innerHTML = val; 
+}
+
+function inputMMImpress(val) {
+  document.getElementById("mmCard").innerHTML = val; 
+}
+
+function inputAAImpress(val) {
+  document.getElementById("aaCard").innerHTML = val; 
+}
+
+function inputCVCImpress(val) {
+  document.getElementById("cvcNumber").innerHTML = val; 
+}
